@@ -6,7 +6,7 @@
 
 
     <EditText
-        android:id="@+id/editTextEmail"
+        android:id="@+id/etEmail"
         android:layout_width="376dp"
         android:layout_height="57dp"
         android:layout_alignParentTop="true"
@@ -15,7 +15,7 @@
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/editTextPassword"
+        android:id="@+id/etPassword"
         android:layout_width="381dp"
         android:layout_height="65dp"
         android:layout_alignParentTop="true"
@@ -24,16 +24,16 @@
         android:inputType="textPassword" />
 
     <CheckBox
-        android:id="@+id/checkBoxShowPassword"
+        android:id="@+id/cbPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editTextPassword"
+        android:layout_below="@+id/etPassword"
         android:layout_marginTop="7dp"
         android:text="Mostrar contraseña" />
 
 
     <EditText
-        android:id="@+id/editTextNombre"
+        android:id="@+id/etNombre"
         android:layout_width="395dp"
         android:layout_height="55dp"
         android:layout_alignParentStart="true"
@@ -47,7 +47,7 @@
         android:inputType="text" />
 
     <EditText
-        android:id="@+id/editTextApellido"
+        android:id="@+id/etApellido"
         android:layout_width="395dp"
         android:layout_height="55dp"
         android:layout_alignParentStart="true"
@@ -61,7 +61,7 @@
         android:inputType="text" />
 
     <EditText
-        android:id="@+id/editTextDni"
+        android:id="@+id/etDni"
         android:layout_width="395dp"
         android:layout_height="64dp"
         android:layout_alignParentStart="true"
@@ -74,10 +74,10 @@
         android:ems="10"
         android:inputType="text" />
     <Button
-        android:id="@+id/buttonRegister"
+        android:id="@+id/buttonRegistrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editTextPassword"
+        android:layout_below="@id/etPassword"
         android:layout_marginTop="394dp"
         android:text="Guardar" />
 

@@ -1,8 +1,6 @@
 package com.ulp.tp1laboratorio.ui.registro;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.content.Intent;
@@ -28,18 +26,18 @@ public class RegistroActivity extends AppCompatActivity {
 
         registroViewModel = new ViewModelProvider(this).get(RegistroViewModel.class);
 
-         emailET = findViewById(R.id.editTextEmail);
-         passwordET = findViewById(R.id.editTextPassword);
-         nombreET = findViewById(R.id.editTextNombre);
-         apellidoET = findViewById(R.id.editTextApellido);
-         dniET = findViewById(R.id.editTextDni);
-        Button registerButton = findViewById(R.id.buttonRegister);
-        CheckBox checkBoxShowPassword = findViewById(R.id.checkBoxShowPassword);
+         emailET = findViewById(R.id.etEmail);
+         passwordET = findViewById(R.id.etPassword);
+         nombreET = findViewById(R.id.etNombre);
+         apellidoET = findViewById(R.id.etApellido);
+         dniET = findViewById(R.id.etDni);
+        Button registrarButton = findViewById(R.id.buttonRegistrar);
+        CheckBox cbPassword = findViewById(R.id.cbPassword);
 
             if(getIntent().getBooleanExtra("cargarDatos", false)){
                 cargarDatosUsuario();
             }
-        registerButton.setOnClickListener(v -> {
+        registrarButton.setOnClickListener(v -> {
             String email = emailET.getText().toString();
             String password = passwordET.getText().toString();
             String nombre = nombreET.getText().toString();
@@ -50,7 +48,7 @@ public class RegistroActivity extends AppCompatActivity {
             Intent intent = new Intent(RegistroActivity.this, MainActivity.class);
             startActivity(intent);
         });
-        checkBoxShowPassword.setOnCheckedChangeListener((buttonView, isChecked) -> {
+        cbPassword.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (isChecked) {
                 passwordET.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
             } else {

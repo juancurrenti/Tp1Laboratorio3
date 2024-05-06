@@ -5,7 +5,7 @@
     android:padding="16dp">
 
     <EditText
-        android:id="@+id/editTextEmail"
+        android:id="@+id/etEmail"
         android:layout_width="384dp"
         android:layout_height="59dp"
         android:layout_alignParentTop="true"
@@ -15,7 +15,7 @@
 
 
     <EditText
-        android:id="@+id/editTextPassword"
+        android:id="@+id/etPassword"
         android:layout_width="379dp"
         android:layout_height="73dp"
         android:layout_alignParentTop="true"
@@ -24,26 +24,26 @@
         android:inputType="textPassword" />
 
     <CheckBox
-        android:id="@+id/checkBoxShowPassword"
+        android:id="@+id/cbPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editTextPassword"
+        android:layout_below="@+id/etPassword"
         android:layout_marginTop="29dp"
         android:text="Mostrar contraseña" />
 
     <Button
-        android:id="@+id/buttonLogin"
+        android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editTextPassword"
+        android:layout_below="@id/etPassword"
         android:layout_marginTop="135dp"
         android:text="Login" />
 
     <Button
-        android:id="@+id/buttonGoToRegister"
+        android:id="@+id/btnRegistrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/buttonLogin"
+        android:layout_below="@id/btnLogin"
         android:layout_marginTop="41dp"
         android:text="Register" />
 </RelativeLayout>
